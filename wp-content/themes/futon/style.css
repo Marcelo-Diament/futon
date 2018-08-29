@@ -14,6 +14,14 @@
 
 *{
 	font-family: 'Raleway', sans-serif;
+	scroll-behavior: smooth;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+a:hover{
+	text-decoration: none;
+	color: #88aabb;
 }
 .storefront-breadcrumb{
 	margin-bottom: 5px !important;
@@ -84,4 +92,11 @@
 .cores li{
 	margin: 1px;
 	display: inline-block;
+}
+.info-complementar{
+	margin: 50px auto;
+}
+.tab-pane{
+	padding: 20px;
+	text-align: justify;
 }

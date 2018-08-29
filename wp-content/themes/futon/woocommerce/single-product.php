@@ -36,8 +36,8 @@ get_header( 'shop' ); ?>
 	<section class="row">
 		
 		<!-- GALERIA DE IMAGENS - INÍCIO -->
-		<article class="col-6">
 
+		<article class="col-6">
 
 			<?php 
 
@@ -99,7 +99,44 @@ get_header( 'shop' ); ?>
 		<!-- INFORMAÇÕES GERAIS - FIM -->
 	
 	</section>
+
+	<section class="row">
+
+		<!-- Tabs de Informações Complementares-->
+		<article class="col-12 info-complementar">
+			
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+			    <a class="nav-item nav-link active" id="nav-descricao-tab" data-toggle="tab" href="#nav-descricao" role="tab" aria-controls="nav-descricao" aria-selected="true">Descrição</a>
+			    <a class="nav-item nav-link" id="nav-duvidas-tab" data-toggle="tab" href="#nav-duvidas" role="tab" aria-controls="nav-duvidas" aria-selected="false">Dúvidas</a>
+			    <a class="nav-item nav-link" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="false">Informações</a>
+			    <a class="nav-item nav-link" id="nav-manuais-tab" data-toggle="tab" href="#nav-manuais" role="tab" aria-controls="nav-manuais" aria-selected="false">Manuais</a>
+			  </div>
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="nav-descricao" role="tabpanel" aria-labelledby="nav-descricao-tab">
+			  	<?php the_field('descricao_adicional'); ?>
+			  </div>
+			  <div class="tab-pane fade" id="nav-duvidas" role="tabpanel" aria-labelledby="nav-duvidas-tab">
+			  	<?php the_field('duvidas'); ?>
+			  </div>
+			  <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+			  	<?php the_field('informacoes_tecnicas'); ?>
+			  </div>
+			  <div class="tab-pane fade" id="nav-manuais" role="tabpanel" aria-labelledby="nav-manuais-tab">
+			  	<?php the_field('manuais'); ?>
+			  </div>
+			</div>
+
+		</article>
+
+
+		
+	</section>
+	
 	<!-- CUSTOMIZAÇÃO DA PÁGINA - FIM -->
+
+
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
