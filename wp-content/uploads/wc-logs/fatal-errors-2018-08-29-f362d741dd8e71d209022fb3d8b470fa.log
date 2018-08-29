@@ -34,3 +34,12 @@
 
 2018-08-29T01:12:48+00:00 CRITICAL Maximum execution time of 90 seconds exceeded
 
+2018-08-29T16:18:11+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wp_get_attachment_image(), 0 passed in C:\xampp\htdocs\futon\wp-content\themes\futon\woocommerce\single-product.php on line 40 and at least 1 expected in C:\xampp\htdocs\futon\wp-includes\media.php:871
+Stack trace:
+#0 C:\xampp\htdocs\futon\wp-content\themes\futon\woocommerce\single-product.php(40): wp_get_attachment_image()
+#1 C:\xampp\htdocs\futon\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\futon\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\futon\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown
+
