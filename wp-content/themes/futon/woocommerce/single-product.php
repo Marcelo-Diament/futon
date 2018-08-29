@@ -38,7 +38,7 @@ get_header( 'shop' ); ?>
 		<!-- GALERIA DE IMAGENS - INÍCIO -->
 
 		<article class="col-6">
-
+			<!-- Imagem de Capa -->
 			<?php 
 
 				$image = get_field('imagem_de_capa');
@@ -102,7 +102,7 @@ get_header( 'shop' ); ?>
 
 	<section class="row">
 
-		<!-- Tabs de Informações Complementares-->
+		<!-- Tabs de Informações Complementares via ACF + Bootstrap -->
 		<article class="col-12 info-complementar">
 			
 			<nav>
@@ -121,7 +121,24 @@ get_header( 'shop' ); ?>
 			  	<?php the_field('duvidas'); ?>
 			  </div>
 			  <div class="tab-pane fade" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
-			  	<?php the_field('informacoes_tecnicas'); ?>
+			  	<?php
+
+				if( have_rows('informacoes_tecnicas') ):
+
+				    while ( have_rows('informacoes_tecnicas') ) : the_row();?>
+						<div class="row">
+					        <span class="col-6"> <?php the_sub_field('parametro'); ?> </span>
+					        <span class="col-6"> <?php the_sub_field('descricao_tecnica'); ?> </span>
+						</div>
+				    <?php endwhile;
+
+				else :
+
+				    echo "<h3> Não há informações técnicas cadastradas ainda</h3>";
+
+				endif;
+
+				?>
 			  </div>
 			  <div class="tab-pane fade" id="nav-manuais" role="tabpanel" aria-labelledby="nav-manuais-tab">
 			  	<?php the_field('manuais'); ?>
