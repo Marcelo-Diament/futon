@@ -1,0 +1,29 @@
+	body{
+		width: 7cm;
+		height: 4cm;
+		font-family: sans-serif;
+		text-align: justify;
+	}
+	h1{
+		font-size: 16pt;
+		color: #000;
+		font-weight: bold;
+	}
+	.prefix, .sufix{
+		font-size: 12pt;
+	}
+	ul{
+		list-style: none;
+		padding-left: 0;
+	}
+	li{
+		font-size: 10pt;
+		color: #000;
+		line-height: 12pt;
+	}
+	.price{
+		font-weight: normal;
+	}
+	.promoPrice{
+		font-weight: bold;
+	}

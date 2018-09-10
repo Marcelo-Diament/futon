@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		body{
+			height: 279.4mm;
+			width: 215.9mm;
+			border: 1pt solid black;
+			padding: 12.7mm 4.8mm;
+			box-sizing: border-box;
+			margin: 0;
+		}
+		table, tbody{
+			table-layout: fixed;
+		    height: 268mm;
+		    width: 207mm;
+		    display: table-caption;
+		    margin-left: -3px;
+		    margin-top: -10px;
+		}
+		tr{
+			height: 25.4mm !important;
+		    max-height: 25.4mm !important;
+		    min-height: 25.4mm !important;
+			display: table-row;
+		}
+		td{
+		    width: 66.7mm !important;
+		    min-width: 66.7mm !important;
+		    max-width: 66.7mm !important;
+		    height: 25.4mm !important;
+		    max-height: 25.4mm !important;
+		    min-height: 25.4mm !important;
+		    display: inline-block;
+		}
+		td:nth-child(2){
+			margin: 0 2mm 
+		}
+		ul{
+			width: 66.7mm !important;
+			height: 25.4mm !important;
+			font-family: sans-serif;
+			text-align: justify;
+			margin: 0;
+			padding: 0;
+		}
+		h1{
+			font-size: 15pt;
+		    color: #000;
+		    font-weight: bold;
+		    margin: 5px 0;
+		}
+		.prefix, .sufix{
+			font-size: 12pt;
+		}
+		ul{
+			list-style: none;
+			padding-left: 0;
+			margin: 0;
+		}
+		li{
+			font-size: 9pt;
+			color: #000;
+			line-height: 9pt;
+		}
+		.price{
+			font-weight: normal;
+		}
+		.promoPrice{
+			font-weight: bold;
+		}
+	</style>
+	<script>
+		const promoExist = document.querySelector('#promoPrice')
+		const price = document.querySelectorAll('.price')
+		const promo = document.querySelectorAll('.promo')
+		if (!promoExist){
+			price.style = "font-weight: bold;"
+			promo.style = "display: none;"
+		} else {
+			price.style = "font-weight: lighter;"
+			promo.style = "display: inline-block;"
+		}
+	</script>
+	<title>Produto Tag</title>
+</head>
+<body>
+	<!-- <main> -->
+		<table>
+			<tr>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+				<td>
+				<ul>
+					<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+				</td>
+			</tr>
+		</table>
+		<!-- <section>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por </span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por </span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por </span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por </span></li>
+				</ul>
+			</article>
+		</section>
+
+		<section>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por </span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por </span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por </span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por </span></li>
+				</ul>
+			</article>
+		</section>
+
+		<section>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por </span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por </span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por <span id="promoPrice">R$ 4.999,99</span></span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por </span></li>
+				</ul>
+			</article>
+			<article>
+				<h1><span class="prefix">poltrona</span> <span class="mainName">Paulistano</span> <span class="sufix">couro</span></h1>
+				<ul>
+					<li>Cód<b> ABC1234DEF5678</b></li>
+					<li>Designer<b> Paulo Mendes da Rocha</b></li>
+					<li>Marca<b> Futon Company</b></li>
+					<li>Preço<span class="promo"> de </span><span class="price">R$ 5.000,00</span><span class="promo"> por </span></li>
+				</ul>
+			</article>
+		</section> -->
+	<!-- </main> -->
+</body>
+</html>
